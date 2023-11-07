@@ -53,7 +53,14 @@ export default function ImageUploader({
         name="image"
         accept="image/*"
         multiple={true}
-        capture="environment"
+        onChange={handleFiles}
+      />
+      <input
+        id="images"
+        type="file"
+        name="image"
+        accept="image/*"
+        capture
         onChange={handleFiles}
       />
     </div>
